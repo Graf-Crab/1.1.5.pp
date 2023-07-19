@@ -7,7 +7,7 @@ import jm.task.core.jdbc.util.Util;
 
 public class Main {
     public static void main(String[] args) {
-        Util.getSession();
+       
         UserDao userDao = new UserDaoHibernateImpl();
         userDao.dropUsersTable();
         userDao.createUsersTable();
